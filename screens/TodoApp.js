@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import { KeyboardAvoidingView, StyleSheet, Text, View, TextInput, TouchableOpacity, Keyboard, ScrollView } from 'react-native';
-import Task from './components/Task';
+import Task from '../components/Task';
 
-export default function App() {
+
+const TodoApp = () => {
   const [task, setTask] = useState();
   const [taskItems, setTaskItems] = useState([]);
 
@@ -104,3 +105,7 @@ const styles = StyleSheet.create({
   },
   addText: {},
 });
+
+
+
+export default TodoApp;

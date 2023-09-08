@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Icon } from 'react-native-elements';
 import Constants from 'expo-constants';
+import TodoApp from './TodoApp';
 
 const Drawer = createDrawerNavigator();
 
@@ -17,7 +18,7 @@ const TodoNavigator = () => {
         <Stack.Navigator screenOptions={screenOptions}>
             <Stack.Screen
                 name='TodoApp'
-                component={toDoApp}
+                component={TodoApp}
                 options={({ navigation }) => ({
                     title: 'My To Do List in Savannah',
                     headerLeft: () => (
